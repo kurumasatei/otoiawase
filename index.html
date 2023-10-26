@@ -82,7 +82,7 @@
                 const mail  = $('input[name="mail"]').val();
                 const tell = $('input[name="tell"]').val();
                 const shitumon = $('input[name="shitumon"]').val();
-                const msg = `${name}\n${hurigana}\n${kisyamei}\n${mail}\n${tell}\n${shitumon}`;
+                const msg = `担当者様お名前：${name}\n${hurigana}\n${kisyamei}\n${mail}\n${tell}\n${shitumon}`;
                 sendText(msg);
                 return false;
             });
