@@ -27,7 +27,7 @@
         </div>
         <p class="mt-3">電話番号</p>
         <div>
-            <input class="form-control w-100 mt-1" name="Tell" required>
+            <input class="form-control w-100 mt-1" name="tell" required>
         </div>
         <p class="mt-3">ご質問内容をご記入記ください</p>
         <div>
@@ -80,8 +80,9 @@
                 const hurigana = $('input[name="hurigana"]').val();
                 const kisyamei  = $('input[name="kisyamei"]').val();
                 const mail  = $('input[name="mail"]').val();
-                const Tell = $('input[name="Tell"]').val();
-                const msg = `${name}\n${hurigana}\n${kisyamei}\n${mail}\n${Tell}`;
+                const tell = $('input[name="tell"]').val();
+                const shitumon = $('input[name="shitumon"]').val();
+                const msg = `${name}\n${hurigana}\n${kisyamei}\n${mail}\n${tell}\n${shitumon}`;
                 sendText(msg);
                 return false;
             });
