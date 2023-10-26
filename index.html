@@ -81,7 +81,7 @@
                 const kisyamei  = $('input[name="kisyamei"]').val();
                 const mail  = $('input[name="mail"]').val();
                 const tell = $('input[name="tell"]').val();
-                const shitumon = $('input[name="shitumon"]').val();
+                const shitumon = $('textarea[name="shitumon"]').val();
                 const msg = `担当者様お名前: ${name}\nふりがな: ${hurigana}\n貴社名: ${kisyamei}\nメールアドレス: ${mail}\n電話番号: ${tell}\nご質問内容: ${shitumon}`;
                 sendText(msg);
                 return false;
